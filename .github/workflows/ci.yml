@@ -1,0 +1,36 @@
+name: CI
+on:
+  push:
+    branches:
+      - 'master'
+      - 'next'
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    env:
+      CI: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install dependencies and build app
+        run: |
+          yarn
+
+      - name: Release
+        env:
+          GITHUB_NPM_CONFIG_REGISTRY: 'https://npm.pkg.github.com/'
+          GITHUB_NPM_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
+          PUBLIC_NPM_CONFIG_REGISTRY: 'https://registry.npmjs.org'
+          PUBLIC_NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
+        run: npx semantic-release

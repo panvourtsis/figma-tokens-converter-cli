@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./bin",
+    //    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "**/node_modules/**/",
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "typeDocs",
+    "documentation",
+    "server",
+    "**/__snapshots__",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "__mocks__",
+    "./jest.config.js"
+  ]
+}

@@ -1,0 +1,28 @@
+name: PR
+on:
+  pull_request:
+    branches:
+      - 'master'
+      - 'next'
+
+jobs:
+  deploy-review-app:
+    name: Deploy Review App
+    runs-on: ubuntu-latest
+    env:
+      CI: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install dependencies and build app
+        run: |
+          yarn
+
+      - name: Run Tests
+        run: yarn test

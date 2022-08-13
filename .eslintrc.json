@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "node": true
+  },
+  "plugins": ["@typescript-eslint", "import"],
+  "rules": {
+    /* eslint basic rules */
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "no-debugger": "warn",
+    "no-console": "warn",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", ["internal", "parent", "sibling", "index", "object"]],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "parser": "@typescript-eslint/parser"
+}

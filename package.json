@@ -1,0 +1,56 @@
+{
+  "name": "figma-tokens-converter-cli",
+  "version": "0.0.0",
+  "author": "Panagiotis Vourtsis",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "figma-tokens-converter-cli": "./bin/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.2",
+    "chalk": "4.1.2",
+    "commander": "^9.4.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@amanda-mitchell/semantic-release-npm-multiple": "^3.5.0",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.182",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "prebuild": "rimraf bin",
+    "prepare": "yarn build && husky install",
+    "start": "tsc -w",
+    "tsc": "tsc",
+    "lint:fix": "eslint '**/*.{js,ts}' --fix",
+    "lint": "eslint './src/**/*.{js,ts}'",
+    "test": "jest --passWithNoTests",
+    "build": "yarn tsc",
+    "chmod": "chmod u+x ./bin/index.js"
+  },
+  "keywords": [
+    "figma tokens",
+    "figma design tokens",
+    "typescript",
+    "react",
+    "figma",
+    "figma tool"
+  ]
+}

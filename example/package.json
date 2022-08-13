@@ -2,5 +2,8 @@
   "name": "example",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "figma-tokens-converter-cli": "^0.0.0"
+  }
 }

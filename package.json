@@ -42,7 +42,7 @@
     "lint:fix": "eslint '**/*.{js,ts}' --fix",
     "lint": "eslint './src/**/*.{js,ts}'",
     "test": "jest --passWithNoTests",
-    "build": "yarn tsc",
+    "build": "yarn tsc && yarn chmod",
     "chmod": "chmod u+x ./bin/index.js"
   },
   "keywords": [

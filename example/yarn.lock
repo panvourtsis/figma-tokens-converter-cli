@@ -39,10 +39,10 @@ commander@^9.4.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.0.tgz#bc4a40918fefe52e22450c111ecd6b7acce6f11c"
   integrity sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==
 
-figma-tokens-converter-cli@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/figma-tokens-converter-cli/-/figma-tokens-converter-cli-0.0.0.tgz#a413708fc812e4d4e211960ae4cf227607005118"
-  integrity sha512-TtFF2lnmflQeViso8BE+6ZqqM3BAYZSLhWRjC+g3QeBFgzFX+Fe8TNGpMFwEVWmAJDx17Cw+qriqnxe1CwT04Q==
+figma-tokens-converter-cli@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/figma-tokens-converter-cli/-/figma-tokens-converter-cli-1.1.0.tgz#1391d947feaffb03530b6cfbeb8942dbcea1b66f"
+  integrity sha512-Fhn1d9PCrjyxehXCz25pHeCSWvmWXqKkw2T4ThTCED/pjVvL5bZK+9r4wM0HTWaGkmeZ+pz17vRoGZ1qDY4AmA==
   dependencies:
     "@types/node" "^18.7.2"
     chalk "4.1.2"

@@ -1,0 +1,22 @@
+const lineHeight = {
+  '1': {
+    value: '14',
+    type: 'lineHeights',
+    description: 'For form field labels only',
+  },
+  '2': {
+    value: '16',
+    type: 'lineHeights',
+    description: 'For input fields only (Form Fields & Tables)',
+  },
+  '3': {
+    value: '18px',
+    type: 'lineHeights',
+  },
+  '4': {
+    value: '20',
+    type: 'lineHeights',
+  },
+} as const;
+
+export default lineHeight;

@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "figma-tokens-converter-cli": "^0.0.0"
+    "figma-tokens-converter-cli": "^1.1.0"
+  },
+  "scripts": {
+    "cli": "figma-tokens-converter-cli"
   }
 }

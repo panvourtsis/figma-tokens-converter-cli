@@ -1,0 +1,16 @@
+const sizing = {
+  '0': {
+    value: '0px',
+    type: 'sizing',
+  },
+  '1': {
+    value: '4px',
+    type: 'sizing',
+  },
+  '2': {
+    value: '8px',
+    type: 'sizing',
+  },
+} as const;
+
+export default sizing;

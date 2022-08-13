@@ -28,7 +28,6 @@ jobs:
 
       - name: Release
         env:
-          PUBLIC_NPM_CONFIG_REGISTRY: 'https://registry.npmjs.org'
-          PUBLIC_NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: npx semantic-release

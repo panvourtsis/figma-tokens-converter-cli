@@ -8,13 +8,13 @@
     "figma-tokens-converter-cli": "./bin/index.js"
   },
   "dependencies": {
+    "@semantic-release/npm": "^9.0.1",
     "@types/node": "^18.7.2",
     "chalk": "4.1.2",
     "commander": "^9.4.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@amanda-mitchell/semantic-release-npm-multiple": "^3.5.0",
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@semantic-release/changelog": "^6.0.1",

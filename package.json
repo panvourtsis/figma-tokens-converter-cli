@@ -4,10 +4,7 @@
   "author": "Panagiotis Vourtsis",
   "license": "MIT",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/panvourtsis/figma-tokens-converter-cli.git"
-  },
+  "repository": "panvourtsis/figma-tokens-converter-cli",
   "bin": {
     "figma-tokens-converter-cli": "./bin/index.js"
   },

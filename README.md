@@ -12,6 +12,11 @@ In order to install it on your system simply run
 yarn add figma-tokens-converter-cli
 ```
 
+### Example
+
+For convinience i made an example that you can see [here](https://github.com/panvourtsis/figma-tokens-converter-cli/tree/main/example)
+The example is how the cli can work on a project.
+
 ### Help
 
 By running the command as a cli on your terminal you can see the options and arguments needed
